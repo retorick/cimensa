@@ -1,0 +1,21 @@
+{% extends "internal.html" %}
+
+{% block content %}
+<style type="text/css">
+input[id^="sum_"] {
+    width:50px;
+}
+</style>
+<p class="pagetitle">Mental Addition</p>
+<table width="100%">
+  <tr>
+    <td>24<br/>39<br/><input type="text" id="sum_1" /></td>
+    <td>24<br/>39<br/><input type="text" id="sum_1" /></td>
+    <td>24<br/>39<br/><input type="text" id="sum_1" /></td>
+    <td>24<br/>39<br/><input type="text" id="sum_1" /></td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><input type="button" value="Done" onclick="check()"></td>
+  </tr>
+</table>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'internal.html' %}
+
+{% block content %}
+{% for article in articles %}
+  {% ifchanged article.category.category %}
+<h2>{{ article.category.category }}</h2>
+  {% endifchanged %}
+<p><a href="/articles/{{ article.id }}/">{{ article.title }}</a></p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+<h1>Words Game</h1>
+<p>Correct one: {{ correct }}</p>
+<dl>
+{% for word in words %}
+  <dt>{{ word.word }}</dt>
+  {% if forloop.counter == correct %}
+  <dd>{{ word.definition }}</dd>
+  {% else %}
+  <dd>Noise</dd>
+  {% endif %}
+{% endfor %}
+</dl>

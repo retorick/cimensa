@@ -1,0 +1,9 @@
+{% extends 'internal.html' %}
+
+{% block content %}
+<p>Title: {{ article.tagline }}</p>
+<p>Date: {{ article.post_date }}</p>
+<hr/>
+{{ article.article|safe }}
+<hr/>
+{% endblock %}

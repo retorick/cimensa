@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Channel Islands Mensa - {{ page_title }}</title>
+  <link type="text/css" rel="stylesheet" href="/static/css/reset.css"/>
+  <link type="text/css" rel="stylesheet" href="/static/css/cimensa.css"/>
+</head>
+<body style="background:black">
+<form name="homegame" method="post" action="homegame">
+<input type="hidden" name="arg" value="1">
+<input type="hidden" name="game" value="<?php echo $game; ?>">
+<div id="container">
+  <img src="/static/images/home_1.png"/>
+  <img src="/static/images/home_2.png"/>
+  <div id="game_container">
+    <div id="wordgame">
+      <p class="definition">{{ correctdef }} ({{ correctword }}; {{ correct }})</p>
+      <input type="hidden" name="definition" value="{{ correctdef }}"/>
+      <ul>
+{% for word in words %}
+        <li id='{{ word.id }}'>{{ word.word }}</li>
+{% endfor %}
+      </ul>
+<!-- End Vocabulary Quiz -->
+    </div>
+  </div>
+  <div id="nav_container" style="z-index:10">
+    <div id="nav_background">
+      <ul id="nav">
+        <li id="mensa101" style=""><a href="./about">Mensa 101</a>
+          <ul>
+            <li><a href="">Demographics</a></li>
+            <li><a href="">Qualifications</a>
+              <ul>
+                <li><a href="">Other Societies</a></li>
+                <li><a href="">Bigger and Badder</a></li>
+              </ul>
+            </li>
+            <li><a href="">Why People Join</a></li>
+          </ul>
+        </li>
+        <li id="playground" style=""><a href="./playground">Playground</a>
+          <ul>
+            <li><a href="/playground/pi">Pi Memorization</a></li>
+            <li><a href="/playground/customcrypt">Cryptogram</a></li>
+            <li><a href="/playground/addition">Addition Blitz</a></li>
+            <li><a href="/playground/multiplication">Multiplication Blitz</a></li>
+          </ul>
+        </li>
+        <li id="calendar" style=""><a href="./calendar">Calendar</a></li>
+        <li id="news" style=""><a href="./news">News</a>
+        </li>
+        <li id="articles" style=""><a href="contribindex">Member Articles</a>
+          <ul>
+            <li><a href="">Technology</a></li>
+            <li><a href="">Linguistics</a></li>
+            <li><a href="">Weird &amp; Whacky</a></li>
+            <li><a href="">Entertainment</a></li>
+            <li><a href="">Other stuff</a></li>
+          </ul>
+        </li>
+        <li id="links" style=""><a href="./links">Links</a>
+          <ul>
+            <li><a href="">Reference</a></li>
+            <li><a href="">Humor</a></li>
+            <li><a href="">Shopping</a></li>
+          </ul>
+        </li>
+        <li id="contact" style=""><a href="./contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="disclaimer" style="text-align:center">
+    Copyright &copy; <?php echo date("Y"); ?> Channel Islands Mensa.<br />The Mensa logo is a registered trademark of Mensa International, Ltd. and American Mensa, Ltd., all rights reserved.<br />Mensa does not hold any opinions, or have, or express, any political or religious views. 
+  </div>
+</div>
+
+</form>
+</body>
+</html>

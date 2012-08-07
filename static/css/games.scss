@@ -1,0 +1,39 @@
+#wordgame p {
+    margin:0;
+}
+#wordgame .definition {
+    position:relative;
+    padding:3px;
+    background-color:#c1c3d2;
+    color:black;
+    -moz-border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px 3px;
+}
+#wordgame {
+    font:8pt verdana;
+    width:250px;
+    padding:5px;
+    color:white;
+    background:black;
+    filter:alpha(opacity=30);
+    background:rgba(0,0,0,.3);
+    -moz-border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px 3px;
+}
+#wordgame ul li {
+    cursor:pointer;
+    position:relative;
+    padding:3px;
+    margin:5px;
+    padding-left:15px;
+    font:bold 10pt arial;
+    text-shadow:black 1px 1px 1px;
+    color:#9093a7;
+    background:#636780;
+    filter:alpha(opacity=100);
+    -moz-border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px 3px;
+}
+#wordgame ul li:hover {
+    background:#808399;
+}

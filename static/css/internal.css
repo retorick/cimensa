@@ -1,0 +1,25 @@
+body { background:black; }
+#page { width:770px; margin:auto; }
+#container { background-color:white; background-image:url(/static/images/vertical_divider.png); background-repeat:repeat-y; background-position:150px 0; min-height:500px; }
+#masthead { position:relative; height:151px; width:770px; background:url(/static/images/int_1.png) no-repeat; }
+#nav_background { position:absolute; top:101px; left:0; background:rgba(0,0,0,.7); }
+#heading { position:absolute; width:256px; height:29px; background:url(/static/images/header_mensa101.png) no-repeat; top:122px; left:514px; }
+#masthead_shadow { width:100%; height:0; }
+#leftcol { float:left; width:126px; padding:12px; font:8pt verdana; min-height:100%; }
+    #leftcol img { display:block; margin:auto; margin-bottom:10px; border:1px solid black; }
+#rightcol { float:left; width:519px; padding:40px 50px 0 50px; 
+    line-height:150%; 
+    font-size:9pt;
+    font-family: verdana;
+    color:#333;
+}
+#rightcol a {
+    text-decoration:none;
+    color:#f90;
+}
+#rightcol a:active {
+    color:#f90;
+}
+#rightcol a:visited {
+    color:#d38e26;
+}

@@ -1,0 +1,31 @@
+@import url("/reset.css");
+body {
+    background:black;
+    margin:0;
+}
+  .hometext {
+  font-family:verdana, arial, helvetica;
+  font-size:8pt;
+  color:#eeeeee;
+  }
+  .disclaimer {
+  font-family:verdana, arial, helvetica;
+  font-size:7pt;
+  color:#999999;
+  }
+  .math {
+  font-family:verdana, arial, helvetica;
+  font-size:12pt;
+  font-weight:bold;
+  color:#eeeeee;
+  }
+  .mathfield {
+  color:#999EC4; 
+  font-size:10pt; 
+  background-color:#272B48; 
+  font-family:arial;
+  border-width:1;
+  border-style:solid;
+  border-color:#999ec4;
+  }
+

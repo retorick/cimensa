@@ -1,0 +1,149 @@
+.disclaimer {
+    clear:both;
+    padding-top:10px;
+    font:7pt verdana, arial, helvetica;
+    color:#999999;
+}
+
+/* General */
+p {
+    margin:0px 0 20px 0;
+}
+
+ul {
+    list-style:url(/static/images/beige_bullet.gif);
+}
+
+/* Site layout */
+#container { width:770px; margin:auto; }
+#container > img { float:left; }
+#game_container { position:relative; width:310px; height:221px; background:url(/static/images/home_3.png) no-repeat; float:left; }
+#nav_container { position:relative; width:770px; height:127px; background:url(/static/images/home_4.png) no-repeat; float:left; }
+    /* nav_background is absolutely positioned within nav_container. */
+    #nav_background { 
+        position:absolute; 
+        float:left; 
+        width:770px; 
+        height:19px; 
+        top:21px; 
+        left:0; 
+        border-top:1px solid white; 
+        border-bottom:1px solid white; 
+        background:black; /* For those browsers that have yet to get with the program */ 
+        background:rgba(0,0,0,.5); /* Firefox supports and will allow descendants to override this method of alpha level */
+    }
+
+/* Navigation stuff */
+#nav li { list-style:none; }
+#nav li { position:relative; display:block; }
+
+/* Top level: horizontal, centered */
+#nav { 
+    position:relative; 
+    clear:left; 
+    float:left; 
+    margin:0; 
+    padding:0; 
+    left:50%; 
+    text-align:center; 
+}
+#nav > li {
+    font:8pt verdana; 
+    text-shadow:1px 1px 2px black;
+    padding-left:10px; 
+    padding-top:2px; 
+    padding-right:10px; 
+    height:19px; 
+    display:block; 
+    float:left; 
+    right:50%;
+}
+
+/* Submenus: vertically stacked, display on hover */
+#nav li ul { 
+    position:absolute; 
+    display:block; 
+    z-index:1000; 
+    padding:0; 
+    margin:0; 
+    top:30px; 
+    left:0; 
+    background:#2a2e42; 
+    background:rgba(42,46,66,.8); 
+    width:125px; 
+    top:19px; 
+    /* Just because the support is at present a bit wonky doesn't mean we can't have a little fun, provided it's a luxury rather than a necessity. */
+    -moz-box-shadow:1px 1px 2px black; /* Firefox */
+    -webkit-box-shadow:1px 1px 2px black; /* Safari, Chrome */
+    -moz-border-radius: 0px 0px 10px 10px; /* Firefox */
+    -webkit-border-radius: 0px 0px 10px 10px; /* Chrome */
+}
+#nav ul ul { 
+    left:100px; top:5px; 
+    -moz-border-radius:10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+#nav ul li {
+    border-top:1px solid #444763;
+}
+#nav ul li:first-child {
+    border-top:none;
+}
+#nav li > ul { display:none; }
+#nav li:hover > ul { display:block; }
+#nav li li:hover { 
+    background:#3c4054; 
+    background:rgba(0,0,0,.3); 
+}
+#nav li li { 
+    text-shadow:none; /* Because text shadow added to an li child of #nav still gets applied here.  It shouldn't, but it does. */
+    text-align:left; 
+    padding:3px; 
+}
+
+/* Uses anchor tags for conventional linking, so specify link text color */
+#nav a { 
+    text-decoration:none; 
+    color:white; 
+    color:rgba(255,255,255,1); 
+}
+
+#wordgame p {
+    margin:0;
+}
+#wordgame .definition {
+    position:relative;
+    padding:3px;
+    background-color:#c1c3d2;
+    color:black;
+    -moz-border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px 3px;
+}
+#wordgame {
+    font:8pt verdana;
+    width:250px;
+    padding:5px;
+    color:white;
+    background:black;
+    filter:alpha(opacity=30);
+    background:rgba(0,0,0,.3);
+    -moz-border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px 3px;
+}
+#wordgame ul li {
+    cursor:pointer;
+    position:relative;
+    padding:3px;
+    margin:5px;
+    padding-left:15px;
+    font:bold 10pt arial;
+    text-shadow:black 1px 1px 1px;
+    color:#9093a7;
+    background:#636780;
+    filter:alpha(opacity=100);
+    -moz-border-radius:3px 3px 3px 3px;
+    -webkit-border-radius:3px 3px 3px 3px;
+}
+#wordgame ul li:hover {
+    background:#808399;
+}
